@@ -1,0 +1,55 @@
+import {
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  ArgsTable,
+  Stories,
+  PRIMARY_STORY,
+  Meta,
+  Story,
+  Canvas,
+} from '@storybook/addon-docs'
+
+import { Breadcrumb } from './Breadcrumb.component'
+
+<Title />
+<Subtitle of={Breadcrumb} />
+
+A `Breadcrumb` module is a control that shows a “breadcrumb trail” showing the parent pages of the
+current page allowing users to make selections from a range of values.
+
+### Usage:
+
+- Internal pages
+- Modals
+
+### Playground
+
+<Primary />
+
+## Example Usage
+
+```
+import { Breadcrumb } from '@teamfabric/storefront-ui'
+
+```
+
+<ArgsTable story={PRIMARY_STORY} />
+
+## Features
+
+#### 1. Small Size
+
+<Story id="molecules-breadcrumb--small" />
+
+#### 2. Collapsed breadcrumb
+
+Shortend version of the breadcrumb and when clicked on the dots it will open a dropdown showing all
+possible links.
+
+<Story id="molecules-breadcrumb--shortend" />
+
+#### 3. Back to result view
+
+<Story id="molecules-breadcrumb--back-to-result" />

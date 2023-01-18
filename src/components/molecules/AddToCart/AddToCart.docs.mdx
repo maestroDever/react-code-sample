@@ -1,0 +1,68 @@
+import {
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  ArgsTable,
+  Stories,
+  PRIMARY_STORY,
+  Meta,
+  Story,
+  Canvas,
+} from '@storybook/addon-docs'
+
+import { AddToCart } from './AddToCart.component'
+
+<Title />
+<Subtitle of={AddToCart} />
+
+`AddToCart` allow users to add items to the cart, and make choices with a single tap.
+
+### Usage:
+
+- Dialogs
+- Modal windows
+- Forms
+- Cards
+- Toolbars
+
+### Playground
+
+<Primary />
+
+## Example Usage
+
+```
+import { AddToCart } from '@teamfabric/storefront-ui'
+
+```
+
+<ArgsTable story={PRIMARY_STORY} />
+
+## Features
+
+#### 1. Default CTA button
+
+Can have an aria label `customAriaLabel`
+
+<Story id="molecules-addtocart--default" />
+
+#### 2. CTA button with with helper text
+
+Can have an aria label `helperText`
+
+<Story id="molecules-addtocart--helper-text" />
+
+#### 3. CTA button with `Out of Stock` state
+
+The CTA can have either of the three states `Enabled`, `Out of stock`, `Loading` based on which the
+button can be take the styles.
+
+<Story id="molecules-addtocart--out-of-stock" />
+
+#### 3. CTA button with Loading state
+
+The CTA can be in one of three states: `Enabled`, o`Out of stock`, or `Loading`, depending on the
+state the button is in.
+
+<Story id="molecules-addtocart--loading" />
